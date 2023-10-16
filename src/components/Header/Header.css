@@ -24,11 +24,16 @@
 
 .wrapper {background-color: #23232b};
 
-@media only screen and (max-width: 720px) {
-    
+@media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: -20px;
+    }
+    .header-text text {
+        font-size: 35px;
+    }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 600px) {
     .header-text {
         margin-top: -20px;
     }
