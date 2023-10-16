@@ -1,0 +1,81 @@
+.chat-container {
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+    width: calc(100% - 6rem);
+    margin-left: auto;
+}
+
+.chats {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-details svg {
+    height: 40px;
+}
+
+.profile-name {
+    font-size: 13px;
+}
+
+.chat-details {
+    text-align: left;
+    padding: 25px;
+    padding-left: 35px;
+}
+
+.chat-body {
+    font-size: 18px;
+}
+
+.chat-vote {
+    position: relative;
+    margin-top: 25px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-vote i {
+    cursor: pointer;
+}
+
+.chat-vote p {
+    position: relative;
+    left: 5px;
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chat-body p {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.chat-date {
+    text-align: right;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .chat-container {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+    }
+}
