@@ -109,7 +109,7 @@ const ChatDetails = () => {
                                 Anonymous User
                             </p>
                         </div>
-                        <i class="fa-solid fa-share-nodes fa-xl" style={{ color: '#ffffff' }} onClick={copy}></i>
+                        <i className="fa-solid fa-share-nodes fa-xl" style={{ color: '#ffffff' }} onClick={copy}></i>
                     </div>
 
                     <div className="chat-details">

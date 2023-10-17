@@ -1,0 +1,39 @@
+.profile-info {
+    background-color: #23232b;
+    color: white;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.profile-info h2 {
+    font-size: 40px;
+}
+
+.profile-detail svg {
+    min-height: 2rem;
+    height: 3rem;
+}
+
+.profile-detail .acc-name {
+    font-size: 25px;
+}
+
+.profile-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.other-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.other-detail a {
+    color: white;
+    text-decoration: none;
+}

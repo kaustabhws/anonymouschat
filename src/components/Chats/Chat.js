@@ -23,7 +23,7 @@ const Chat = (props) => {
 
     const chatDetails = (e) => {
         history(`/details/${chat._id}`);
-      }
+    }
 
 
     const [hasVoted, setHasVoted] = useState(false);
@@ -48,11 +48,11 @@ const Chat = (props) => {
     const renderVoteIcon = () => {
         if (hasVoted) {
             return (
-                <i class="fa-solid fa-hand fa-xl"></i>
+                <i className="fa-solid fa-hand fa-xl"></i>
             );
         } else {
             return (
-                <i className="fa-regular fa-hand fa-xl" onClick={updateVote}></i>
+                <i className="fa-regular fa-hand fa-xl"></i>
             );
         }
     };
@@ -76,8 +76,11 @@ const Chat = (props) => {
                     <p onClick={chatDetails}>details...</p>
                 </div>
                 <div className="chat-vote">
-                    {renderVoteIcon()}
-                    <p>{chat.vote}</p>
+                    <p className='vote-no'>{chat.vote}</p>
+                    <div className="vote-con" onClick={updateVote}>
+                        {renderVoteIcon()}
+                        <p>Vote</p>
+                    </div>
                 </div>
                 <div className="chat-date">
                     {date.toLocaleDateString('en-US', dateOptions)}, {date.toLocaleTimeString('en-US', timeOptions)}

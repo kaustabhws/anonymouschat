@@ -26,31 +26,31 @@ const Home = () => {
       <Header />
       <div className="chat-container">
         {loading ? (
-          <div class="spinnerContainer">
-            <div class="spinner"></div>
-            <div class="loader">
+          <div className="spinnerContainer">
+            <div className="spinner"></div>
+            <div className="loader">
               <p>loading</p>
-              <div class="words">
-                <span class="word">posts</span>
-                <span class="word">images</span>
-                <span class="word">followers</span>
-                <span class="word">hashtags</span>
-                <span class="word">posts</span>
+              <div className="words">
+                <span className="word">posts</span>
+                <span className="word">images</span>
+                <span className="word">followers</span>
+                <span className="word">hashtags</span>
+                <span className="word">posts</span>
               </div>
             </div>
           </div>
         ) : (
           chats.length === 0 ? (
-            <div class="loaders">
-              <div class="loader-inner">
-                <div class="loader-block"></div>
-                <div class="loader-block"></div>
-                <div class="loader-block"></div>
-                <div class="loader-block"></div>
-                <div class="loader-block"></div>
-                <div class="loader-block"></div>
-                <div class="loader-block"></div>
-                <div class="loader-block"></div>
+            <div className="loaders">
+              <div className="loader-inner">
+                <div className="loader-block"></div>
+                <div className="loader-block"></div>
+                <div className="loader-block"></div>
+                <div className="loader-block"></div>
+                <div className="loader-block"></div>
+                <div className="loader-block"></div>
+                <div className="loader-block"></div>
+                <div className="loader-block"></div>
               </div>
               <p>No Posts Available</p>
             </div>

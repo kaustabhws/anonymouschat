@@ -42,18 +42,18 @@
 .chat-vote {
     position: relative;
     margin-top: 25px;
-    top: 50px;
     display: flex;
-    flex-direction: column;
+    gap: 10px;
 }
 
 .chat-vote i {
     cursor: pointer;
 }
 
-.chat-vote p {
-    position: relative;
-    left: 5px;
+.vote-con {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .chat-body {
@@ -68,6 +68,8 @@
 }
 
 .chat-date {
+    position: relative;
+    bottom: 45px;
     text-align: right;
     font-size: 12px;
 }

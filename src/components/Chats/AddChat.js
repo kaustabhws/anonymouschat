@@ -44,7 +44,7 @@ const AddChat = () => {
                         <textarea name="body" id="" cols="30" rows="10" placeholder='Enter your text here' onChange={onChange}></textarea>
                     </div>
                     <div className="post-btn">
-                        <button class="button" onClick={handleSubmit}>Post →</button>
+                        <button className="button" onClick={handleSubmit}>Post →</button>
                     </div>
                 </div>
             </div>
