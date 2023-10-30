@@ -9,7 +9,7 @@ body {
 }
 
 i {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 :root {

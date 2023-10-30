@@ -38,7 +38,6 @@ const Chat = (props) => {
     };
 
     useEffect(() => {
-        // Check if the user has already voted in a previous session
         const hasVotedPreviously = localStorage.getItem(`voted_${chat._id}`);
         if (hasVotedPreviously === 'true') {
             setHasVoted(true);
@@ -76,11 +75,10 @@ const Chat = (props) => {
                     <p onClick={chatDetails}>details...</p>
                 </div>
                 <div className="chat-vote">
-                    <p className='vote-no'>{chat.vote}</p>
                     <div className="vote-con" onClick={updateVote}>
                         {renderVoteIcon()}
-                        <p>Vote</p>
                     </div>
+                    <p className='vote-no'>{chat.vote}</p>
                 </div>
                 <div className="chat-date">
                     {date.toLocaleDateString('en-US', dateOptions)}, {date.toLocaleTimeString('en-US', timeOptions)}

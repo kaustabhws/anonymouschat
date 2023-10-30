@@ -41,9 +41,15 @@
 
 .chat-vote {
     position: relative;
+    top: 20px;
     margin-top: 25px;
     display: flex;
+    flex-direction: column;
     gap: 10px;
+}
+
+.chat-vote p {
+    margin-left: 5px;
 }
 
 .chat-vote i {
